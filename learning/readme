@@ -1,0 +1,7 @@
+mvn profile learning.
+
+profile: dev prod test
+
+mvn clean install -P log.filename=test.log
+
+for different profile,can add different env resources.
