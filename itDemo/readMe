@@ -1,0 +1,9 @@
+run unit test: mvn clean test -P dev
+
+run int test: mvn clean verify -P integration-test
+
+use @Category to run different tests.(mvn clean install -P integration-test -Dgroups="com.kelvin.OoclTest")
+excludeGroups: (mvn clean install -P integration-test -DexcludedGroups="com.kelvin.OoclTest")
+
+run specific it test: mvn verify Dit.test=subTest/*
+run specific ut test: mvn test Dtest=subTest/*
